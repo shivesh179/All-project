@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+body{
+    color: white;
+    background-color: #121212;  
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2%;
+    margin-bottom: -6%;
+}
+h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+h6{
+    font-size: 10px;
+    text-align: center;
+}
+.carousel{
+    overflow: visible;
+}
+.carousel .carousel-item{
+    width: 400px;
+}
+.carousel-item img{
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
+}
+.accounts{
+    text-align: center;
+}
+.icon{
+    height: 60px;   
+    margin: 0 20px;
+    padding: 5px;
+    transition-duration: 1s;
+}
+.whatsapp{
+    opacity: 0;
+    margin-top: 0px;
+    animation-name: come;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.gmail{
+    opacity: 0;
+    margin-top: 0px;
+    animation-name: come;
+    animation-duration: 1.5s;
+    animation-delay: 1.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.github{
+    transition-duration: 1s;
+    filter: invert(100.100);
+    opacity: 0;
+    margin-top: 0px;
+    animation-name: come;
+    animation-duration: 1.5s;
+    animation-delay: 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.linkedin{
+    opacity: 0;
+    margin-top: 0px;
+    animation-name: come;
+    animation-duration: 1.5s;
+    animation-delay: 1.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes come{
+    from{
+        margin-top: 0px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    to{
+        margin-top: 150px;
+        opacity: 1;
+    }
+}
+.github:hover{
+    filter: invert(0.0);
+    transform: scale(1.2);
+}
+.icon:hover{
+    transform: scale(1.2);
+}
